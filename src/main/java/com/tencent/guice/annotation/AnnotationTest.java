@@ -1,4 +1,4 @@
-package com.tencent.guice;
+package com.tencent.guice.annotation;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,10 +9,13 @@ import com.google.inject.Module;
 import com.tencent.guice.hello.HelloWorldGuice;
 import com.tencent.guice.hello.HelloWorldGuiceModule;
 
-public class App {
+public class AnnotationTest {
 	public static void main(String[] args) {
-		List<Module> modules = loadModule();
-		Injector injector = Guice.createInjector(modules);
+		List<Module> modules = null;
+//		 = loadModule();
+		Injector injector = Guice.createInjector();
+		
+		System.out.println(injector.getAllBindings());
         HelloWorldGuice helloGuice = injector.getInstance(HelloWorldGuice.class);
         helloGuice.sayHello();
 	}
