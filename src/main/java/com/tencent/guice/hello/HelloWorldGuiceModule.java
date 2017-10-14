@@ -12,7 +12,8 @@ public class HelloWorldGuiceModule extends AbstractModule {
 	@Override
 	protected void configure() {
 		// bind service to implementation class
-        bind(HelloWorldGuice.class).to(HelloWorldGuiceImpl.class);
+//        bind(HelloWorldGuice.class).to(HelloWorldGuiceImpl.class);
+//        bind(HelloWorldGuice.class).to(new HelloWorldGuiceImpl());
 		
 	}
 
