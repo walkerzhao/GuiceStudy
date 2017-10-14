@@ -10,6 +10,8 @@ Guice的学习demo
 
 # Binder
 * 绑定接口和实现类之间的关系；
+* 一个接口只能绑定一个实现类，不过可以通过注解加以区分，Guice中自带的有：@Named
+* 可以绑定实现类、实例以及Provider
 
 # Injectors
 * 会使用configure中的配置，去获取实现类，从而生成对象；
@@ -27,11 +29,14 @@ Guice的学习demo
 * Provided By--为接口定制化创建对象的流程；
 * Singleton--单例模式的对象
 
+# Guice AOP
+* 看看jungle-db的aop
+
 
 
 
 
 # 参考帖子：
-Guice入门：http://blog.csdn.net/u011870547/article/details/52622097
-Guice Wiki：https://github.com/google/guice/wiki/Motivation
-慕课网Guice作者的课程： http://www.imooc.com/video/15924
+* Guice入门：http://blog.csdn.net/u011870547/article/details/52622097
+* Guice Wiki：https://github.com/google/guice/wiki/Motivation
+* 慕课网Guice作者的课程： http://www.imooc.com/video/15924

@@ -8,10 +8,12 @@ import org.junit.Test;
 import com.google.inject.Guice;
 import com.google.inject.Inject;
 import com.google.inject.Injector;
+import com.google.inject.name.Named;
 
 public class HelloWorldGuiceTest {
 	
 	@Inject
+	@Named("hello1")
 	protected HelloWorldGuice helloWorldGuice;
 	
 	@Before
