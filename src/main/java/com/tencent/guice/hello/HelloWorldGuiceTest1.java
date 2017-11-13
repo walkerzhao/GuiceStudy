@@ -7,13 +7,13 @@ import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Module;
 
-public class HelloWorldGuiceTest {
+public class HelloWorldGuiceTest1 {
 	public static void main(String[] args) {
 		List<Module> modules = null;
 //		 = loadModule();
 		Injector injector = Guice.createInjector();
 		
-		System.out.println(injector.getAllBindings());
+//		System.out.println(injector.getAllBindings());
         HelloWorldGuice helloGuice = injector.getInstance(HelloWorldGuice.class);
         helloGuice.sayHello();
 	}
